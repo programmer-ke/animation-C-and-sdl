@@ -117,32 +117,32 @@ int main()
   }
 
   /*load background images*/
-  background = SDL_LoadBMP("src.bmp");
+  background = SDL_LoadBMP("img/src.bmp");
   if (background == NULL) {
     printf("Unable to load image.");
     return 1;
   }
 
-  background2 = SDL_LoadBMP("background2.bmp");
+  background2 = SDL_LoadBMP("img/background2.bmp");
   if (background2 == NULL) {
     printf("Unable to load background2.");
     return 1;
   }
 
-  background3 = SDL_LoadBMP("background3.bmp");
+  background3 = SDL_LoadBMP("img/background3.bmp");
   if (background3 == NULL) {
     printf("Unable to load background3.");
     return 1;
   }
 
-  background4 = SDL_LoadBMP("background4.bmp");
+  background4 = SDL_LoadBMP("img/background4.bmp");
   if (background4 == NULL) {
     printf("Unable to load background4.");
     return 1;
   }
 
   /*load bus*/
-  bus = SDL_LoadBMP("bus.bmp");
+  bus = SDL_LoadBMP("img/bus.bmp");
   if (bus == NULL) {
     printf("Unable to load image.");
     return 1;
@@ -155,7 +155,7 @@ int main()
 		  colorkey);
   
   /*load man*/
-  man = SDL_LoadBMP("man.bmp");
+  man = SDL_LoadBMP("img/man.bmp");
   if (man == NULL) {
     printf("Unable to load image");
     return 1;
@@ -168,7 +168,7 @@ int main()
 		  SDL_SRCCOLORKEY,
 		  colorkey);
 
-  man2 = SDL_LoadBMP("man2.bmp");
+  man2 = SDL_LoadBMP("img/man2.bmp");
   if (man2 == NULL) {
     printf("Unable to load image");
     return 1;
@@ -181,7 +181,7 @@ int main()
 		  SDL_SRCCOLORKEY,
 		  colorkey);
 
-  car1 = SDL_LoadBMP("car1.bmp");
+  car1 = SDL_LoadBMP("img/car1.bmp");
   if (car1 == NULL) {
     printf("Unable to load image");
     return 1;
@@ -195,7 +195,7 @@ int main()
 		  colorkey);
 
 
-  car2 = SDL_LoadBMP("car2.bmp");
+  car2 = SDL_LoadBMP("img/car2.bmp");
   if (car2 == NULL) {
     printf("Unable to load image");
     return 1;
@@ -223,7 +223,7 @@ int main()
   }
 
   //load sound files and convert them to sound card's format
-  if (LoadAndConvertSound("bus-pass.wav", &obtained, &bus_sound) != 0) {
+  if (LoadAndConvertSound("audio/bus-pass.wav", &obtained, &bus_sound) != 0) {
     printf("Unable to load sound.\n");
     return 1;
   }
