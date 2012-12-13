@@ -1,0 +1,19 @@
+Animation with C and SDL.
+
+To build
+
+1) Make sure you have the SDL development libraries in your system. In Ubuntu, do:
+   
+	sudo apt-get install libsdl1.2-dev
+
+You will be prompted to install other packages. Accept and install
+
+2) Move into this directory and do 
+
+	make all
+
+3) Type
+
+	./animation
+
+and press enter.
